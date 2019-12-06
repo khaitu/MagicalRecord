@@ -76,7 +76,7 @@ NSString * const kMagicalRecordCleanedUpNotification = @"kMagicalRecordCleanedUp
 
 + (NSString *) defaultStoreName
 {
-    NSString *defaultName = [[[NSBundle mainBundle] infoDictionary] valueForKey:(NSString *)kCFBundleNameKey];
+    NSString *defaultName = [[NSBundle mainBundle] bundleIdentifier];
     if (defaultName == nil)
     {
         defaultName = kMagicalRecordDefaultStoreFileName;
