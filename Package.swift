@@ -6,9 +6,9 @@ let package = Package(
     name: "MagicalRecord",
     platforms: [
         .iOS(.v8),
-        .macOS(.v10_8),
+        .macOS(.v10_10),
         .tvOS(.v9),
-        .watchoOS(.v2),
+        .watchOS(.v2),
     ],
     products: [
         .library(
